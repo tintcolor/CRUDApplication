@@ -4,7 +4,8 @@ package io.zipcoder.crudapp;
 import org.springframework.data.repository.CrudRepository;
 
 
-import java.util.List;
+import java.util.Collection;
+
 
 /**
  * Created by anthonyjones on 6/15/17.
@@ -13,6 +14,6 @@ import java.util.List;
 
 public interface PersonRepository extends CrudRepository<Person, Integer> {
 
-    List<Person> findByLastName(String lastname);
+    Collection<Person> findAll();
 
 }
